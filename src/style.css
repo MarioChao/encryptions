@@ -33,13 +33,13 @@
 }
 
 .node-disabled-state {
-    background: url('./assets/images/disable.png') no-repeat top center;
+    background: url('../assets/images/disable.png') no-repeat top center;
     background-size: contain;
     width: 20px;
     height: 20px;
 }
 .node-breakpoint-state {
-    background: url('./assets/images/breakpoint.png') no-repeat top center;
+    background: url('../assets/images/breakpoint.png') no-repeat top center;
     background-size: contain;
     width: 20px;
     height: 20px;
