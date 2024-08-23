@@ -2,9 +2,9 @@
 <html>
     <head>
         <title>Encryptions</title>
-        <script type="module" src="./encryption-main.js"></script>
-        <link rel="stylesheet" href="./style.css" type="text/css">
-        <link rel="icon" href="../assets/images/encryptions_favicon.png" type="image/x-icon">
+        <script type="module" src="./src/encryption-main.js"></script>
+        <link rel="stylesheet" href="./src/style.css" type="text/css">
+        <link rel="icon" href="./assets/images/encryptions_favicon.png" type="image/x-icon">
     </head>
     <body style="background-color: rgb(247, 225, 255);">
         <!-- Input / Output -->
@@ -17,7 +17,7 @@
                 <textarea type="text" id="start-input-text" placeholder="It's a me, Mario!" rows="10" cols="30"></textarea>
                 <br>
             </div>
-            
+
             <!-- Output -->
             <div>
                 <!-- Text Output -->
@@ -42,7 +42,7 @@
                 </button>
             </div>
         </div>
-        
+
         <!-- Encryption -->
         <div class="scrolling-frame" style="width: 90%; height: 300px; overflow-y: scroll;">
             <div class="flex-container" id="encryption-list">
@@ -96,7 +96,7 @@
                             <textarea type="text" class="input-replaceText" placeholder="Plaintext to replace with." rows="3" cols="23"></textarea>
                             <br>
                         </div>
-    
+
                         <!-- Encryption info -->
                         <div class="rows">
                             <label>Rows:</label>
@@ -133,9 +133,9 @@
                             <input type="number" class="input-radixTo" value="2">
                             <br>
                         </div>
-                        
+
                         <hr>
-                        
+
                         <div class="repeatCount">
                             <label>Repeat:</label>
                             <input type="number" class="input-repeatCount" value="1">
