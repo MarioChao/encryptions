@@ -17,41 +17,41 @@ function someDecrypt() {
 
 // Encrypt node functions
 function someEncryptFull(text, nodeInfo) {
-    // Get variables
-    // Validate
-    // Encrypt
-    let resultText;
-    
-    // Return
-    return {
-        result: resultText,
-        success: true,
-    };
+	// Get variables
+	// Validate
+	// Encrypt
+	let resultText;
+	
+	// Return
+	return {
+		result: resultText,
+		success: true,
+	};
 }
 
 function someDecryptFull(text, nodeInfo) {
-    // Get variables
-    // Validate
-    // Encrypt
-    let resultText;
+	// Get variables
+	// Validate
+	// Encrypt
+	let resultText;
 
-    // Return
-    return {
-        result: resultText,
-        success: true,
-    };
+	// Return
+	return {
+		result: resultText,
+		success: true,
+	};
 }
 
 function getSomeEncryptNodeParameter() {
-    return {
-        repeatCount: true,
-    };
+	return {
+		repeatCount: true,
+	};
 }
 
 function getSomeDecryptNodeParameter() {
-    return {
-        repeatCount: true,
-    };
+	return {
+		repeatCount: true,
+	};
 }
 
 // Function module
