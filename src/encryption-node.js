@@ -4,6 +4,7 @@ import { functionModule as yeeEncryption } from "./crypto-scripts/yee-encryption
 import { functionModule as asciiEncryption } from "./crypto-scripts/ascii-encryption.js";
 import { functionModule as spiralEncryption } from "./crypto-scripts/spiral-encryption.js";
 import { functionModule as regexEncryption } from "./crypto-scripts/regex.js";
+import { functionModule as caesarEncryption } from "./crypto-scripts/caesar-shift.js";
 import { functionModule as vigenereEncryption } from "./crypto-scripts/vigenere-encryption.js";
 import { functionModule as radixEncryption } from "./crypto-scripts/radix-base.js";
 
@@ -31,6 +32,8 @@ function setUpFunctionTable() {
 	functionTable["regexmatch"] = regexEncryption.matchAll;
 	functionTable["regexmatchsingle"] = regexEncryption.matchSingleGroup;
 	functionTable["regexreplace"] = regexEncryption.replaceAll;
+	functionTable["caesar"] = caesarEncryption.encrypt;
+	functionTable["-caesar"] = caesarEncryption.decrypt;
 	functionTable["vigenere"] = vigenereEncryption.encrypt;
 	functionTable["-vigenere"] = vigenereEncryption.decrypt;
 	functionTable["radix"] = radixEncryption.encrypt;
@@ -46,6 +49,8 @@ function setUpNodeParameterTable() {
 	nodeParameterTable["regexmatch"] = regexEncryption.allNodeParameter;
 	nodeParameterTable["regexmatchsingle"] = regexEncryption.groupNodeParameter;
 	nodeParameterTable["regexreplace"] = regexEncryption.replaceNodeParameter;
+	nodeParameterTable["caesar"] = caesarEncryption.encryptNodeParameter;
+	nodeParameterTable["-caesar"] = caesarEncryption.decryptNodeParameter;
 	nodeParameterTable["vigenere"] = vigenereEncryption.encryptNodeParameter;
 	nodeParameterTable["-vigenere"] = vigenereEncryption.decryptNodeParameter;
 	nodeParameterTable["radix"] = radixEncryption.encryptNodeParameter;
